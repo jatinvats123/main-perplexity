@@ -1,0 +1,32 @@
+{
+  "watch": [
+    "server.js",
+    "src/**/*.js"
+  ],
+  "ignore": [
+    "node_modules",
+    ".git",
+    "dist",
+    "build",
+    ".env",
+    ".env.local",
+    "*.log"
+  ],
+  "delay": 2000,
+  "ext": "js",
+  "execMap": {
+    "js": "node"
+  },
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "verbose": false,
+  "legacyWatch": false,
+  "restartable": "rs",
+  "quiet": true,
+  "events": {
+    "restart": "clear || cls && echo '🔄 Backend restarting...'",
+    "crash": "echo '❌ App crashed. Fix errors and save file to restart.'",
+    "quit": "echo '✅ Backend stopped.'"
+  }
+}
